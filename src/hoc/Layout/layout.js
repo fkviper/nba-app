@@ -1,5 +1,11 @@
 import React,{Component} from 'react';
+import Header from './../../components/Header/header';
+
+
 import './layout.css';
+
+
+
 
 class Layout extends Component{
     state={
@@ -9,7 +15,7 @@ class Layout extends Component{
     render(){
         return (
             <div>
-                Header
+                <Header/>
                 {this.props.children}
                 Footer
             </div>
