@@ -4,9 +4,9 @@ import {Link} from 'react-router-dom';
 
 //fontawesome
 import FontAwesome from 'react-fontawesome';
+import SideNav from '../SideNavigation/sidenav';
 
-
-const Header = ()=>{
+const Header = (props)=>{
     const sideNav=()=>{
         return  (
         <div>
@@ -15,7 +15,9 @@ const Header = ()=>{
                 color:'#dfdfdf',
                 padding:'10px',
                 cursor:'pointer'
-            }}/>
+            }}
+            onClick={props.OnShowNav}
+            />
         </div>);
     }
 
@@ -29,6 +31,7 @@ const Header = ()=>{
 
     return(
         <header className={style.header}>
+            <SideNav {...props}/>
             <div className={style.headerOpt}>
             {sideNav()}
             {logo()}
