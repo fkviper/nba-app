@@ -1,0 +1,15 @@
+.option{
+    text-decoration: none;
+    margin: 5px;
+    border-bottom: 1px #69dc9e solid 
+}
+
+.option a{
+    color: #ffffff;
+    padding: 10px;
+}
+
+.option span{
+    color:#ffffff;
+    padding: 6px;
+}
