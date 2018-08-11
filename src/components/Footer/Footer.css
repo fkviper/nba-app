@@ -1,0 +1,19 @@
+.footer{
+    display: flex;
+    background-color: #242424;
+}
+.footer a{
+    text-decoration: none;
+    padding-top: 6px;
+}
+.footer img{
+    width: 30px
+}
+
+.text{
+    font-family: roboto;
+    color: #bababa;
+    margin-top:4px;
+    margin-left: 8px;
+    font-weight: 100;
+}

@@ -1,5 +1,6 @@
 import React,{Component} from 'react';
 import Header from './../../components/Header/header';
+import Footer from './../../components/Footer/footer';
 
 
 import './layout.css';
@@ -29,7 +30,7 @@ class Layout extends Component{
                 OnShowNav={()=>this.toggleNav(true)}
                 />
                 {this.props.children}
-                Footer
+                <Footer/>
             </div>
         )
     }
