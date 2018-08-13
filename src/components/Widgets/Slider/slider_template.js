@@ -1,5 +1,6 @@
 import React from 'react';
 import Slick from 'react-slick';
+import {Link} from 'react-router-dom';
 
 //css
 import styles from './slider.css';
@@ -11,7 +12,8 @@ const SliderTemplate =(props)=>{
         infinite: true,
         speed: 500,
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        ...props.settings
       };
     
     switch(props.type)
@@ -20,8 +22,16 @@ const SliderTemplate =(props)=>{
             templates = props.data.map((item,i)=>{
                 return(
                     <div key ={i}>
-                        <div>
-                            {i}
+                        <div className={styles.featured_item}>
+                            <div className={styles.featured_image} style={{
+                                background: `url(../images/articles/${item.image})`
+                            }}>
+                            </div>
+                            <Link to={`articles/${item.id}`}>
+                                <div className={styles.featured_text}>
+                                    {item.title}
+                                </div>
+                            </Link>
                         </div>
                     </div>
                 );
