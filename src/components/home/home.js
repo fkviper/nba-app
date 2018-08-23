@@ -9,13 +9,13 @@ const Home=()=>{
             start={0}
             amount={3}
             settings={{
-                dots:true
+                dots:false
             }}
         />
         <NewsList
             type="Card"
             start={3}
-            amount={3}
+            amount={9}
             addmore={true}
         />
         </div>)

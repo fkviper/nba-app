@@ -1,0 +1,17 @@
+.news_item{
+    border: 1px solid #f2f2f2;
+    background: #fff;
+    margin-top: 0px;
+    padding: 8px 5px 0px 5px;
+}
+
+.news_item h2{
+    font-size: 11px;
+    line-height: 17px;
+    margin: 5px 0px;
+    color:#525252;
+}
+
+.news_item a{
+    text-decoration: none;
+}
